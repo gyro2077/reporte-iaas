@@ -17,6 +17,13 @@ import java.util.Map;
 @RequestMapping("/api/v1/generador")
 public class SaludoController {
 
+    // Endpoint GET para healthcheck en Render (evitar que se duerma o saber si está
+    // vivo)
+    @GetMapping("/health")
+    public ResponseEntity<String> healthCheck() {
+        return ResponseEntity.ok("API Generadora de Posts JasperReports está VIVA y lista.");
+    }
+
     @CrossOrigin(origins = "*") // Para permitir peticiones desde n8n u otros orígenes
     @PostMapping(value = "/social-post", produces = MediaType.IMAGE_PNG_VALUE)
     public ResponseEntity<byte[]> generarPost(@RequestBody ReporteRequest request) {
