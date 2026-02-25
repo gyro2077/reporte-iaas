@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" 
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" 
+              name="saludo_iaas" pageWidth="1080" pageHeight="1920" columnWidth="1080" 
+              leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" 
+              uuid="d1234567-1234-4bc9-9234-5adcfebcdf01">
+    <property name="com.jaspersoft.studio.unit." value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+    
+    <parameter name="NOMBRE_USUARIO" class="java.lang.String"/>
+    <parameter name="FOTO_URL" class="java.lang.String"/>
+    <parameter name="BACKGROUND_IMG" class="java.io.InputStream"/>
+    
+    <title>
+        <band height="1920" splitType="Stretch">
+            <!-- Imagen de fondo -->
+            <image scaleImage="FillFrame" onErrorType="Blank">
+                <reportElement x="0" y="0" width="1080" height="1920" uuid="12345678-1111-2222-3333-444455556666"/>
+                <imageExpression><![CDATA[$P{BACKGROUND_IMG}]]></imageExpression>
+            </image>
+            
+            <!-- Foto circular del cumpleañero (cuadro con bordes blancos para simular un marco en Jaspersoft Studio le pueden poner Clip Ellipse) -->
+            <image scaleImage="FillFrame" isUsingCache="true" onErrorType="Blank">
+                <reportElement x="260" y="580" width="550" height="550" uuid="12345678-1111-2222-3333-444455557777"/>
+                <imageExpression><![CDATA[$P{FOTO_URL}]]></imageExpression>
+            </image>
+            
+            <!-- Texto (Nombre) -->
+            <textField textAdjust="ScaleFont" isBlankWhenNull="true">
+                <reportElement x="140" y="1170" width="800" height="100" forecolor="#2E8B57" uuid="12345678-1111-2222-3333-444455558888"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="SansSerif" size="90" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{NOMBRE_USUARIO}]]></textFieldExpression>
+            </textField>
+            
+        </band>
+    </title>
+</jasperReport>

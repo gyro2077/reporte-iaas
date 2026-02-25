@@ -1,0 +1,69 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------------< [0;36mcom.iaas:reportes[0;1m >--------------------------[m
+[[1;34mINFO[m] [1mBuilding reportes 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m]   from pom.xml
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mclean:3.3.2:clean[m [1m(default-clean)[m @ [36mreportes[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/gyro/Documents/IAAS/cumpleanios_automatizado/reporte-iaas/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot:3.2.4:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mreportes[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mresources:3.3.1:resources[m [1m(default-resources)[m @ [36mreportes[0;1m ---[m
+[[1;34mINFO[m] Copying 0 resource from src/main/resources to target/classes
+[[1;34mINFO[m] Copying 2 resources from src/main/resources to target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mcompiler:3.11.0:compile[m [1m(default-compile)[m @ [36mreportes[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module! :source
+[[1;34mINFO[m] Compiling 3 source files with javac [debug release 17] to target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mresources:3.3.1:testResources[m [1m(default-testResources)[m @ [36mreportes[0;1m ---[m
+[[1;34mINFO[m] skip non existing resourceDirectory /home/gyro/Documents/IAAS/cumpleanios_automatizado/reporte-iaas/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mcompiler:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36mreportes[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot:3.2.4:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mreportes[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot:3.2.4:run[m [1m(default-cli)[m @ [36mreportes[0;1m ---[m
+[[1;34mINFO[m] Attaching agents: []
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.4)
+
+2026-02-24T21:54:42.109-05:00  INFO 39587 --- [           main] c.iaas.reportes.IaasReportApplication    : Starting IaasReportApplication using Java 17.0.17 with PID 39587 (/home/gyro/Documents/IAAS/cumpleanios_automatizado/reporte-iaas/target/classes started by gyro in /home/gyro/Documents/IAAS/cumpleanios_automatizado/reporte-iaas)
+2026-02-24T21:54:42.115-05:00  INFO 39587 --- [           main] c.iaas.reportes.IaasReportApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-24T21:54:43.507-05:00  INFO 39587 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-24T21:54:43.524-05:00  INFO 39587 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-24T21:54:43.525-05:00  INFO 39587 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-02-24T21:54:43.592-05:00  INFO 39587 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-24T21:54:43.593-05:00  INFO 39587 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1410 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2026-02-24T21:54:44.113-05:00  INFO 39587 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-24T21:54:44.127-05:00  INFO 39587 --- [           main] c.iaas.reportes.IaasReportApplication    : Started IaasReportApplication in 2.595 seconds (process running for 3.005)
+2026-02-24T21:56:30.329-05:00  INFO 39587 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-24T21:56:30.330-05:00  INFO 39587 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-24T21:56:30.333-05:00  INFO 39587 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+URL Drive limpia: https://drive.google.com/uc?export=view&id=1jToQAtJsnYZEJJoUWPnBh-UA-WirMRVT
+URL Drive limpia: https://drive.google.com/uc?export=view&id=1jToQAtJsnYZEJJoUWPnBh-UA-WirMRVT
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  03:11 min
+[[1;34mINFO[m] Finished at: 2026-02-24T21:57:49-05:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.springframework.boot:spring-boot-maven-plugin:3.2.4:run[m [1m(default-cli)[m on project [36mreportes[m: [1;31mProcess terminated with exit code: 137[m -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
