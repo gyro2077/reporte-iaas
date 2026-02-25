@@ -34,3 +34,15 @@ La respuesta será un archivo binario `image/png` descargable.
 2. Abre el archivo `src/main/resources/reports/saludo_iaas.jrxml`.
 3. Ajusta la estética (posición del texto, clip circular de la foto, etc.) con las herramientas visuales.
 4. **Nota sobre imagen de fondo**: El diseño cuenta con un fondo que carga desde el classpath `reports/background.jpg` al momento de ejecutar la API.
+
+## Despliegue en Render (Docker)
+Este proyecto está 100% optimizado para ser desplegado en [Render.com](https://render.com) utilizando su infraestructura Docker, ya que JasperReports necesita empaquetar librerías gráficas (fuentes) a nivel de sistema operativo para generar los PDFs/Imágenes correctamente.
+
+### Pasos
+1. Sube este repositorio a **GitHub**.
+2. En tu dashboard de Render, crea un nuevo **Web Service**.
+3. Conecta tu repositorio de GitHub.
+4. En **Environment**, elige `Docker` (Render lo detectará automáticamente por el `Dockerfile`).
+5. Haz clic en **Create Web Service**.
+
+> ✨ El `Dockerfile` incluido ya cuenta con un proceso de compilación Multi-stage (construye el `.jar` en una máquina y luego lo pasa a un entorno superligero Alpine de Java 17). Además, incluye `fontconfig` y `ttf-dejavu` que previenen el popular error de JasperReports *"java.lang.NullPointerException en sun.awt.FontConfiguration"*.
